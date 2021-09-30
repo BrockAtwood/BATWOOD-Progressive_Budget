@@ -4,7 +4,7 @@
 let db;
 
 //establish connection to db
-const request = indexedDB.open("budget", 1);
+const request = indexedDB.open("budget", 2);
 
 //create schema -- object stores and our indexes to query
 request.onupgradeneeded = function (e) {
