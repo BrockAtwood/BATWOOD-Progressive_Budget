@@ -62,4 +62,4 @@ function checkingTheDatabase() {
 }
 
 //looking for application to come back online again
-window.addEventListener("listening online again", checkingTheDatabase);
+window.addEventListener("online", checkingTheDatabase);
