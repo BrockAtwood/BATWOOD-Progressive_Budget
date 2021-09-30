@@ -44,7 +44,7 @@ function checkingTheDatabase() {
         method: "POST",
         body: JSON.stringify(getAll.result),
         headers: {
-          accept: "application/json, text/plain, */*",
+          Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
         },
       })
