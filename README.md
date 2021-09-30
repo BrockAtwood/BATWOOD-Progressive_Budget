@@ -29,6 +29,8 @@ The user will be able to add expenses and deposits to their budget with or witho
 - NoSQL
 
 ## ScreenShot:
+![Screen Shot 2021-09-30 at 2 56 48 PM](https://user-images.githubusercontent.com/87385012/135530299-cd58937b-97df-4ca3-bf64-de38b1d5a3b8.png)
+
 
 ## Delopyment links:
 
