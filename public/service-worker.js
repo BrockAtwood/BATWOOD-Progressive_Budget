@@ -9,17 +9,17 @@ const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_TO_CACHE = [
   "/",
   "/indexedDB.js",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
   "/index.html",
   "/manifest.webmanifest",
+  "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png",
   "/styles.css",
 ];
 
 //Unit #19 Activities #11-#13
 // installation phase - cache assets - determine what files we want to cache
 self.addEventListener("install", function (evt) {
-  //pre cache data (1 open a cache 2 cahche the files)
+  //pre cache data (1 open a cache 2 cache the files)
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("Your files were pre-cached successfully!");
