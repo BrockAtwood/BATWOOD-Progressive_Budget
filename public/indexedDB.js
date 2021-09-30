@@ -4,7 +4,7 @@
 let db;
 
 //establish connection to db
-const request = indexedDB.open("budget", 2);
+const request = indexedDB.open("budget", 1);
 
 //create schema -- object stores and our indexes to query
 request.onupgradeneeded = function (e) {
@@ -59,6 +59,12 @@ function checkingTheDatabase() {
         });
     }
   };
+}
+
+function deleteWaitingNewTransaction() {
+  const transaction = db.transaction(["waiting_new_transaction"], "readwrite");
+  const store = transaction.objectStore("waiting_new_transaction");
+  store.clear();
 }
 
 //looking for application to come back online again
