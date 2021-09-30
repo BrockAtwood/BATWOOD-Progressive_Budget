@@ -27,7 +27,7 @@ request.onerror = function (e) {
   console.log("Oh-Snap, something went wrong!", +e.target.errorCode);
 };
 
-function savingRecord(record) {
+function saveRecord(record) {
   const transaction = db.transaction(["waiting_new_transaction"], "readwrite");
   const store = transaction.objectStore("waiting_new_transaction");
   store.add(record);
